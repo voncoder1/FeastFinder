@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeastFinder</title>
+    <link rel="stylesheet" href="feastfinder.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forte:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"><span class="feast">Feast</span><span class="finder">Finder</span></h1>
+        <nav>
+            <ul>
+                <li><a href="feastfinder.html">Home</a></li>
+                <li><a href="orderfood.html">Order Food</a></li>
+                <li><a href="find.html">Find Restaurants</a></li>
+                <li><a href="reserve.html">Reserve a Table</a></li>
+                <li><a href="login.html" class="login">Login</a></li>
+                <li>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="order-food.jpeg" alt="Order Food" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="bestfood.jpeg" alt="Find Restaurants" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="reserve.jpeg" alt="Reserve Table" style="width:100%">
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+    <main>
+        <section id="featured-restaurants">
+            <h2>Featured Restaurants</h2>
+            <div class="horizontal-layout">
+                <div class="card">
+                    <img src="restaurant1.jfif" alt="Restaurant 1">
+                    <h3>Restaurant Name 1</h3>
+                    <p>A brief description of the restaurant.</p>
+                </div>
+                <div class="card">
+                    <img src="restaurant2.jpeg" alt="Restaurant 2">
+                    <h3>Restaurant Name 2</h3>
+                    <p>A brief description of the restaurant.</p>
+                </div>
+                <div class="card">
+                    <img src="restaurant3.jfif" alt="Restaurant 3">
+                    <h3>Restaurant Name 3</h3>
+                    <p>A brief description of the restaurant.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="special-offers">
+            <h2>Special Offers and Promotions</h2>
+            <div class="horizontal-layout">
+                <div class="card">
+                    <h3>Discount on XYZ</h3>
+                    <p>Get 20% off on orders above $50.</p>
+                </div>
+                <div class="card">
+                    <h3>Weekend Special</h3>
+                    <p>Free dessert with every meal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="horizontal-layout">
+                <div class="card">
+                    <p>"FeastFinder made it so easy to find great restaurants!"</p>
+                    <cite>- Happy Customer</cite>
+                </div>
+                <div class="card">
+                    <p>"Ordering food has never been this simple and quick."</p>
+                    <cite>- Satisfied User</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-dishes">
+            <h2>Top Dishes</h2>
+            <div class="horizontal-layout">
+                <div class="card">
+                    <img src="Burger.jpeg" alt="Dish 1">
+                    <h3>Dish Name 1</h3>
+                    <p>A brief description of the dish.</p>
+                </div>
+                <div class="card">
+                    <img src="Burger.jpeg" alt="Dish 2">
+                    <h3>Dish Name 2</h3>
+                    <p>A brief description of the dish.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Find Restaurants Near You</h2>
+            <div class="horizontal-layout">
+                <div id="map-container" class="card">
+                    <!-- Interactive map integration -->
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Latest from Our Blog</h2>
+            <div class="horizontal-layout">
+                <div class="card">
+                    <h3>Food Trends of 2024</h3>
+                    <p>Discover the hottest food trends this year...</p>
+                </div>
+                <div class="card">
+                    <h3>Best Restaurants in Town</h3>
+                    <p>A review of the top dining spots...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="horizontal-layout">
+                <div class="card">
+                    <p>Email: brandontakang3@gmail.com</p>
+                    <p>Phone: +(237) 670 26 94 14</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FeastFinder. All rights reserved.</p>
+    </footer>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script src="feastfinder.js"></script>
+</body>
+</html>

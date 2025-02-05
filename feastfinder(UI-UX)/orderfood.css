@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1c1c1c; /* Slightly black background */
+    color: white; /* Text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333333; /* Darker black for header */
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 0.5rem;
+}
+
+.search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.food-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.deals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #333333;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(30% - 1rem);
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.social-feed {
+    margin-top: 1rem;
+}
+
+.twitter-feed {
+    width: 100%;
+    text-align: center;
+}
+.logo { font-size: 2rem; font-family: 'forte',sans-serif; /* Change font type */ } 
+.feast { color: white; } 
+.finder { color: green; }
